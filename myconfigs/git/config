@@ -1,0 +1,21 @@
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        fetch = +refs/heads/*:refs/remotes/origin/*
+        url = git@github.com:d4nirod/chaos_chalmer_fork.git
+[branch]
+        autosetuprebase = always
+[branch "master"]
+        remote = upstream
+        merge = refs/heads/master
+        rebase = true
+[remote "upstream"]
+        url = git://git.openwrt.org/15.05/openwrt.git
+        fetch = +refs/heads/*:refs/remotes/upstream/*
+[branch "devel"]
+        remote = origin
+        merge = refs/heads/devel
+        rebase = true
